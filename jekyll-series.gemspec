@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.email                 = ["torgny.bjers@gmail.com"]
 
   spec.summary               = "Jekyll article series list tag"
-  spec.description           = "Generates an article series list from Markdown frontmatter."
+  spec.description           = "Generates an article series list from Markdown front-matter."
   spec.homepage              = "https://github.com/tbjers/jekyll-series-plugin"
   spec.license               = "MIT"
   spec.required_ruby_version = ">= 2.0.0"
