@@ -29,7 +29,14 @@ gems:
 
 ## Usage
 
-Use the series tag in your Jekyll pages like this:
+Configure the series in the YAML frontmatter of your article:
+
+```YAML
+series: Name of your series
+series_description: A concise description of your series. This should be included on every article.
+```
+
+Use the `series` tag in your Jekyll pages like this:
 
 ```erb
 {% series %}
