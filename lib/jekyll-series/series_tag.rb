@@ -8,7 +8,7 @@ module Jekyll
       def render(context)
         page_data = context.environments.first["page"]
         return "<!-- problem with series tag -->" unless sane_page_data? page_data
-        render_html page_data, context.registers[:site].posts.select { |p| p.data["series"] == page_data["series"] }
+        render_html page_data, context.registers[:site].posts.docs.select { |p| p.data["series"] == page_data["series"] }
       end
 
       def render_html(page_data, all_entries)
