@@ -20,9 +20,20 @@ Or install it yourself as:
 
     $ gem install jekyll-series
 
+Finally, add the following to your `_config.yml` file:
+
+```yaml
+gems:
+  - jekyll-series
+```
+
 ## Usage
 
-TODO: Write usage instructions here
+Use the series tag in your Jekyll pages like this:
+
+```erb
+{% series %}
+```
 
 ## Development
 
