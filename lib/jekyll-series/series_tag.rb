@@ -1,6 +1,6 @@
 module Jekyll
   module Series
-    class Tag < Liquid::Tag
+    class SeriesTag < Liquid::Tag
       def initialize(tag_name, params, token)
         super
       end
@@ -50,4 +50,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag("series_list", Jekyll::Series::Tag)
+Liquid::Template.register_tag("series", Jekyll::Series::SeriesTag)

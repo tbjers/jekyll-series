@@ -2,7 +2,7 @@ $LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 
 require "bundler/setup"
 require "support/jekyll_template"
-require "jekyll/series"
+require "jekyll-series"
 require "byebug" if RUBY_VERSION >= "2.0"
 
 RSpec.configure do |config|
