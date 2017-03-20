@@ -15,12 +15,11 @@ module Jekyll
         text = "<div class='well well-large'>"
         text += "<h3>Series: #{page_data['series']}</h3>"
         text += "<p>#{page_data['series_description']}</p>"
-        list = "<ul class='nav nav-tabs nav-stacked'>"
+        list = "<ul class='jekyll-series'>"
         all_entries.each_with_index do |post|
-          list += "<li>"
           list += generate_title page_data, post
         end
-        text + list += "</ul></div>"
+        text + list + "</ul></div>"
       end
 
       def sane_page_data?(page_data)
@@ -41,7 +40,7 @@ module Jekyll
 
       def generate_title(page_data, post)
         if post.data["title"] == page_data["title"]
-          "<li class='active'><a href='javascript:;'>#{post.data['title']}</a></li>"
+          "<li class='active'><a href='#{post.url}/'>#{post.data['title']}</a></li>"
         else
           "<li><a href='#{post.url}/'>#{post.data['title']}</a></li>"
         end
