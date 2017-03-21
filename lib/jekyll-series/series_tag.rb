@@ -16,7 +16,7 @@ module Jekyll
         all_entries.each_with_index do |post|
           list += generate_title page_data, post
         end
-        text + list + "</ul>"
+        list + "</ul>"
       end
 
       def sane_page_data?(page_data)
